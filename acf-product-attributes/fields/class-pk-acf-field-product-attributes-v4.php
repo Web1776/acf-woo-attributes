@@ -28,7 +28,7 @@ class pk_acf_field_product_attributes extends acf_field {
 	{
 		// vars
 		$this->name = 'product_attributes';
-		$this->label = __('Woocommerce Attribute Picker');
+		$this->label = __('WooCommerce Attribute Picker');
 		$this->category = __("Basic",'pk-product-attributes'); // Basic, Content, Choice, etc
 		$this->defaults = array(
 			// add default here to merge into your field. 
@@ -91,7 +91,7 @@ class pk_acf_field_product_attributes extends acf_field {
 		}else{
 			$atts = array();
 		}
-		if(!$atts){ echo '<h4>No Attributes Defiend</h4>'; }
+		if(!$atts){ echo '<h4>No Attributes Defined</h4>'; }
 		
 		
 		// create Field HTML

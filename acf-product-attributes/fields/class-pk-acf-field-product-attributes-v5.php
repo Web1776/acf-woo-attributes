@@ -37,7 +37,7 @@ class pk_acf_field_product_attributes extends acf_field {
 		*  label (string) Multiple words, can include spaces, visible when selecting a field type
 		*/
 		
-		$this->label = __('Woocommerce Attribute Picker', 'pk-product-attributes');
+		$this->label = __('WooCommerce Attribute Picker', 'pk-product-attributes');
 		
 		
 		/*
@@ -127,7 +127,7 @@ class pk_acf_field_product_attributes extends acf_field {
 		}else{
 			$atts = array();
 		}
-		if(!$atts){ echo '<h4>No Attributes Defiend</h4>'; }
+		if(!$atts){ echo '<h4>No Attributes Defined</h4>'; }
 		
 		/*
 		*  Review the data of $field.
