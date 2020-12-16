@@ -142,6 +142,7 @@ class pk_acf_field_product_attributes extends acf_field {
 			jQuery(function($){
 				$('select.pk-acf-prod-attr-select').select2({
 					placeholder: "Select Attributes",
+					width: "100%",
 				});
 			});
 		</script>
