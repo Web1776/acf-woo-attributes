@@ -118,8 +118,12 @@ class pk_acf_field_product_attributes extends acf_field {
 	*/
 
 	function input_admin_enqueue_scripts(){
-		wp_enqueue_style('select2', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css' );
-		wp_enqueue_script('select2', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js', array('jquery') );
+		if (wp_script_is( 'select2' )) {
+			return;
+		} else {
+			wp_enqueue_style('select2', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css' );
+			wp_enqueue_script('select2', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js', array('jquery') );
+		}
 	}
 	
 	
